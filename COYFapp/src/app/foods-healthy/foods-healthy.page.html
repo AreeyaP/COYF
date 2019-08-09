@@ -1,0 +1,27 @@
+<ion-header>
+<ion-toolbar color="primary">
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>วัตถุดิบของฉัน</ion-title>   
+
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+
+<ion-list-header>
+  <ion-label>วัตถุดิบ</ion-label>
+  <ion-button (click)="ingredients.push('')">เพิ่มวัตถุดิบ</ion-button>
+</ion-list-header>
+
+<ion-item *ngFor="let ingredient of ingredients; let i = index">
+  <ion-input type="text" placeholder="Incredient Name ..."></ion-input>
+  <ion-button *ngIf="ingredients.length>1" (click)="ingredients.splice(i,1)"
+    color="danger">ลบ</ion-button>
+</ion-item>
+</ion-list>
+
+<ion-button expand="block"  (click)="findfood()">ค้นหาเมนู</ion-button>
+</ion-content>

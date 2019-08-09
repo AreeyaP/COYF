@@ -11,13 +11,34 @@ export class MenuPage implements OnInit {
  
   pages = [
     {
-      title: 'First Page with Tabs',
-      url: '/menu/first'
+      title: 'Home',
+      url: '/menu/home',
+      icon :"home"
     },
     {
-      title: 'Second Page blank',
-      url: '/menu/second'
+      title: 'Profile',
+      url: '/menu/profile',
+      icon :"contact"
+    },
+    {
+      title: 'FoodsHealthy',
+      url: '/menu/foodshealthy',
+      icon :"nutrition"
+    },
+    {
+      title: 'Qrcode',
+      url: '/menu/qrcode',
+      icon :"qr-scanner"
+    },
+    {
+      title: 'Settings',
+      url: '/menu/settings',
+      icon :"cog"
     }
+   
+ 
+    
+
   ];
 
   constructor(private router: Router) {

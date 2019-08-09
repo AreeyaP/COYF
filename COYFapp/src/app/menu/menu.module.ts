@@ -25,7 +25,23 @@ const routes: Routes = [
       
       {
         path: 'home',
-        loadChildren: '../home/home.module#HomePageModule'
+        loadChildren: '../first-with-tabs/first-with-tabs.module#FirstWithTabsPageModule'
+      },
+      {
+        path: 'profile',
+        loadChildren: '../profile/profile.module#ProfilePageModule'
+      },
+      {
+        path: 'foodshealthy',
+        loadChildren: '../foods-healthy/foods-healthy.module#FoodsHealthyPageModule'
+      },
+      {
+        path: 'qrcode',
+        loadChildren: '../qrcode/qrcode.module#QrcodePageModule'
+      },
+      {
+        path: 'settings',
+        loadChildren: '../settings/settings.module#SettingsPageModule'
       }
     ]
   }
